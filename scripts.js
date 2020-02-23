@@ -48,3 +48,17 @@ var spec = confirm("Would you like to include special characters?")
     }
 
     console.log(num);
+
+    var lowercase = confirm("Would you like to include lowercase letters?");
+    
+    if (lowercase === true){
+        lowercase = values.lowercaseletters;
+    }
+
+        else if (lowercase === false){
+            lowercase = values.none;
+
+        }
+        console.log(lowercase);
+
+    
