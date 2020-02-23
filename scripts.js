@@ -85,7 +85,7 @@ console.log(characters)
                 
                 
     for (var i = 0; i <= length; i++){
-        password = password + characters.charAt(Math.floor(Math.random() * Math.floor(characters.length -1)));
+        password = password + characters.charAt(Math.floor(Math.random() * Math.floor(characters.length)));
         }
                 
         document.getElementById("password").value = password;
