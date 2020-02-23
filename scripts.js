@@ -24,3 +24,15 @@ do{
     while(length < 8 || length > 128);
 
 console.log(length);
+
+var spec = confirm("Would you like to include special characters?")
+    
+    if (spec === true){
+        spec = values.special;
+    }
+
+    else if(spec === false){
+        spec = values.none;
+    }
+
+    console.log(spec);
