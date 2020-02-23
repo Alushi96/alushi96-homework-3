@@ -7,3 +7,20 @@ var values = {
     uppercaseletters: ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"],
     none: [],
 }
+
+do{
+
+    var length = prompt("How many characters would you like?");
+
+        if (length < 8){
+            alert("Number too small");
+        }
+
+        else if (length > 128){
+            alert("Number to big");
+        }
+
+}
+    while(length < 8 || length > 128);
+
+console.log(length);
