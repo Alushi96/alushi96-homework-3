@@ -36,3 +36,15 @@ var spec = confirm("Would you like to include special characters?")
     }
 
     console.log(spec);
+
+    var num = confirm("Would you like to include numerics?");
+
+    if (num === true){
+        num = values.numeric;
+    }
+
+    else if(num === false){
+        num = values.none;
+    }
+
+    console.log(num);
