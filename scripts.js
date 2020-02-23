@@ -61,4 +61,16 @@ var spec = confirm("Would you like to include special characters?")
         }
         console.log(lowercase);
 
+        var uppercase = confirm("Would you like to include uppercase letters?");
+
+        if (uppercase === true){
+            uppercase = values.uppercaseletters;
+        }
     
+            else if (uppercase === false){
+                uppercase = values.none;
+    
+            }
+            console.log(uppercase);
+
+        
