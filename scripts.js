@@ -21,7 +21,8 @@ do{
         }
 
 }
-    while(length < 8 || length > 128);
+
+while(length < 8 || length > 128);
 
 console.log(length);
 
@@ -35,9 +36,9 @@ var spec = confirm("Would you like to include special characters?")
         spec = values.none;
     }
 
-    console.log(spec);
+console.log(spec);
 
-    var num = confirm("Would you like to include numerics?");
+var num = confirm("Would you like to include numerics?");
 
     if (num === true){
         num = values.numeric;
@@ -47,46 +48,47 @@ var spec = confirm("Would you like to include special characters?")
         num = values.none;
     }
 
-    console.log(num);
+console.log(num);
 
-    var lowercase = confirm("Would you like to include lowercase letters?");
+var lowercase = confirm("Would you like to include lowercase letters?");
     
     if (lowercase === true){
         lowercase = values.lowercaseletters;
     }
 
-        else if (lowercase === false){
+    else if (lowercase === false){
             lowercase = values.none;
 
-        }
-        console.log(lowercase);
+    }
+console.log(lowercase);
 
-        var uppercase = confirm("Would you like to include uppercase letters?");
+var uppercase = confirm("Would you like to include uppercase letters?");
 
-        if (uppercase === true){
-            uppercase = values.uppercaseletters;
-        }
+    if (uppercase === true){
+        uppercase = values.uppercaseletters;
+    }
     
-            else if (uppercase === false){
-                uppercase = values.none;
+    else if (uppercase === false){
+             uppercase = values.none;
     
-            }
-            console.log(uppercase);
+    }
+console.log(uppercase);
 
-            function generate(){
+function generate(){
 
-                let characters = spec + num + lowercase + uppercase;
-                console.log(characters)
+    let characters = spec + num + lowercase + uppercase;
                 
-                let password = "";
+console.log(characters)
+                
+    let password = "";
                 
                 
                 
-                for (var i = 0; i <= length; i++){
-                   password = password + characters.charAt(Math.floor(Math.random() * Math.floor(characters.length -1)));
-                }
+    for (var i = 0; i <= length; i++){
+        password = password + characters.charAt(Math.floor(Math.random() * Math.floor(characters.length -1)));
+        }
                 
-                document.getElementById("password").value = password;
-                }
+        document.getElementById("password").value = password;
+        }
                 
-                generateBtn.addEventListener("click", generate);
+generateBtn.addEventListener("click", generate);
