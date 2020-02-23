@@ -73,4 +73,20 @@ var spec = confirm("Would you like to include special characters?")
             }
             console.log(uppercase);
 
-        
+            function generate(){
+
+                let characters = spec + num + lowercase + uppercase;
+                console.log(characters)
+                
+                let password = "";
+                
+                
+                
+                for (var i = 0; i <= length; i++){
+                   password = password + characters.charAt(Math.floor(Math.random() * Math.floor(characters.length -1)));
+                }
+                
+                document.getElementById("password").value = password;
+                }
+                
+                generateBtn.addEventListener("click", generate);
